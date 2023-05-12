@@ -1,1 +1,4 @@
 .idea
+/collection/count_words/*.class
+/collection/count_words/service_count/*.class
+/collection/count_words/service_frequency/*.class
