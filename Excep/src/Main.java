@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         //MathExcep calc = new MathExcep();
         //calc.division();
@@ -8,8 +8,8 @@ public class Main {
         //vec.addToArray();
 
         Login log = new Login("oi", "eu");
-        boolean b;
 
-        b = log.LoginIn("oi", "eu");
+        log.changePassword("e");
+        log.LoginIn("oi", "e");
     }
 }

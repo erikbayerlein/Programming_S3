@@ -15,7 +15,7 @@ public class Login {
         }
     }
 
-    public boolean LoginIn(String user, String password) {
+    public void LoginIn(String user, String password) {
         try{
             if(!user.equals(this.user)) {
                 throw new Exception("Invalid user");
@@ -24,14 +24,10 @@ public class Login {
             } else {
                 System.out.println("Success");
             }
-            return true;
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            return false;
         }
     }
-
-
 
 }
