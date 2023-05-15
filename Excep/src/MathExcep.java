@@ -16,17 +16,19 @@ public class MathExcep {
             System.out.println("Enter the second num: ");
             num2 = scanner.nextDouble();// Read user input
 
+            if(num2 == 0) {
+                throw new ArithmeticException("Error: division by 0");
+            } else {
+                result = num1 / num2;
+                System.out.println("The result is: " + result);
+            }
+
         } catch (InputMismatchException e) {
             System.out.println("Error: input isn't numeric");
-        }
 
-        try{
-            result = num1 / num2;
         } catch (ArithmeticException e) {
-            System.out.println("Error: division by 0");
+            System.out.println(e.getMessage());
         }
-
-        System.out.println("The result is: " + result);
 
     }
 
